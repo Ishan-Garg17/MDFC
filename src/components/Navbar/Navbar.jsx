@@ -23,13 +23,15 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
+
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
-          >
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            >
+          {/* //This is a div element only bus ye framer motion library ka div initialize kardiya hai */}
 
             <HiX onClick={() => setToggle(false)} />
             
