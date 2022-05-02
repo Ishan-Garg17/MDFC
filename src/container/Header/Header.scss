@@ -5,6 +5,9 @@
     flex-wrap: wrap !important;
     flex-direction: row;
     padding: 6rem 2rem 0;  
+    background: url('../../assets/bgIMG.png');
+    background-size: cover;
+    background-repeat: repeat;
     
     @media screen and (min-width: 2000px) {
         padding-top: 8rem;

@@ -4,10 +4,10 @@ import './About.scss'
 import images from '../../assets/images'
 
 const about = [
-  {title: 'Web Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
-  {title: 'Web Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
-  {title: 'Web Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
-  {title: 'Web Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`}
+  {title: 'Full Stack Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
+  {title: 'Video Editor',description: 'I am a good web Developer',imageURL:`${images.about02}`},
+  {title: 'Graphic Designing',description: 'I am a good web Developer',imageURL:`${images.about03}`}
+  // {title: '',description: 'I am a good web Developer',imageURL:`${images.about04}`}
 ]
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
     <div className='app__about'>
       <h2 className='head-text about_text'>
         I Know that   <span>
-        Good Design
+        Good Products
         </span>
         <br />
         means <span>Good Business</span>
