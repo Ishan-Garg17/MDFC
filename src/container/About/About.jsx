@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import './About.scss'
 import images from '../../assets/images'
+import AppWrap from '../../wrapper/AppWrap'
 
 const about = [
   {title: 'Full Stack Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
@@ -47,4 +48,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About,'about')
