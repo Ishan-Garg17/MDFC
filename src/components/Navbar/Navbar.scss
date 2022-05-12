@@ -4,11 +4,9 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
-    background: rgba(255,255,255,0.25); //0.25 is opacity of the color
+    padding: 0rem 2rem;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.25);
 
     position: fixed;
     z-index: 2;
@@ -18,14 +16,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    margin: 21px;
+    // background-color: rebeccapurple;
+    // height: 200px;
     img{
-        width: 90px;
-        height: 20px;
-        
+        width: 100px;
+        height: 84px;
+        // filter: brightness(0) invert(1);
         @media screen and (min-width: 2000px){
-            width: 180px;
-            height: 40px;
+            width: 155px;
+            height: 123px;
         }
     }
 }
@@ -35,7 +35,8 @@
 .app__navbar-links{
     display: flex;
     flex: 1; //to give it all the space that logo will not take
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 92px;
     align-items: center;
 
     list-style: none;
@@ -54,24 +55,24 @@
         }
 
         a{
-            color: var(--gray-color);
+            color: red;
             text-decoration: none;
             // flex-direction: column;
 
             text-transform: uppercase;
-            font-weight: 500;
-            font-size: 1rem;
+            font-weight: 700;
+            font-size: 1.2rem;
 
             transition: all 0.3s ease-out;
 
             &:hover{
-                color: var(--secondary-color);
+                color: red;
             }
         }
 
         &:hover{
             div{
-                background-color: var(--secondary-color);
+                background-color: red;
             }
         }
     }

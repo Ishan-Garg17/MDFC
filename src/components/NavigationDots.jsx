@@ -9,7 +9,7 @@ const NavigationDots = ({active}) => {
           className="app__navigation-dot" 
           href={`#${item}`} 
           key={`Link-${item+index}`} 
-          style={active===item?{backgroundColor:'#313BAC'}:{ }}/>
+          style={active===item?{backgroundColor:'red'}:{ }}/>
        ))}
     </div>
 )

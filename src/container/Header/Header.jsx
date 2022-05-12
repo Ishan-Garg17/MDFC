@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.scss'
-import images from '../../assets/images'
 import { motion } from 'framer-motion'
 import AppWrap from '../../wrapper/AppWrap';
+import {NavigationDots} from '../../components'
 
 
 const scaleVariants = {
@@ -17,26 +17,26 @@ const scaleVariants = {
 };
 
 const Header = () => (
-  <div className="app__header app__flex">
+  <>
     <motion.div
-      whileInView={{ x: [-300, 0], opacity: [0, 1] }}
+      whileInView={{ x: [-600, -380], opacity: [0, 1] }}
       transition={{ duration: 0.7 }}
       className="app__header-info"
     >
-      <div className="app__header-badge">
+      {/* <div className="app__header-badge"> */}
         <div className="badge-cmp app__flex">
           <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Ishan</h1>
+            <p className="p-text">Every Pro was once a</p>
+            <h1 className="head-text">beginner.</h1>
+            <div className='info__line'>
+                <div/>
+                <span>Turn Yourself into a Pro!</span>
+            </div>
           </div>
         </div>  
-
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
-        </div>
-      </div>
+      {/* </div> */}
     </motion.div>
+  
  
     {/* <motion.div
       whileInView={{ opacity: [0, 1] }}
@@ -64,7 +64,7 @@ const Header = () => (
         </div>
       ))}
     </motion.div> */}
-  </div>
+  </>
 );
 
 export default AppWrap(Header,'home','home_special')
