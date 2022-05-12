@@ -107,13 +107,13 @@
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 10;
+        z-index: 1;
         padding: 1rem;
         border-radius: 13px;
         width: 50%;
         height: 100vh;
-        
-        background: url('../../assets/bgWhite.png');
+        background-color: white;
+        // background: url('../../assets/bgWhite.png');
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168,168,168,0.15);
