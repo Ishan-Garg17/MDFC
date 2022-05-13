@@ -5,6 +5,9 @@
 .section{
   background-color: white;
 }
+body{
+  position: fixed;
+}
 :root {
   --font-base: "DM Sans", sans-serif;
 
