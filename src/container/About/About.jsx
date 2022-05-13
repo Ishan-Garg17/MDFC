@@ -3,35 +3,51 @@ import {motion} from 'framer-motion'
 import './About.scss'
 import images from '../../assets/images'
 import AppWrap from '../../wrapper/AppWrap'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const about = [
-  {title: 'Full Stack Developer',description: 'I am a good web Developer',imageURL:`${images.about01}`},
-  {title: 'Video Editor',description: 'I am a good web Developer',imageURL:`${images.about02}`},
-  {title: 'Graphic Designing',description: 'I am a good web Developer',imageURL:`${images.about03}`}
-  // {title: '',description: 'I am a good web Developer',imageURL:`${images.about04}`}
-]
+import Enquiry from './Enquiry'
+
+AOS.init();
 
 const About = () => {
+  console.log(window.scrollY)
   return (
     <div className='app__about'>
-       
-         <motion.div
+          <div className='about__form' data-aos="fade-in"
+    data-aos-offset="100"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+              <Enquiry/>
+          </div>
+
+          <div className='about__section'>
+              
+              <div className='app__heading'>
+                <h1>Heading</h1>
+              </div>
+
+              <div className='about__content'>
+                <h3>MAIN CONTENT</h3>
+              </div>
+
+          </div>
+
+         {/* <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
           >
-            <p>djwwwwwwww</p>
-            <p>djwwwwwwww</p>
-            <p>djwwwwwwww</p>
-            <p>djwwwwwwww</p>
-            <p>djwwwwwwww</p>
+            
              
-         </motion.div>
+         </motion.div> */}
 
     </div>
    
   )
 }
 
-export default AppWrap(About,'about','section')
+export default AppWrap(About,'about','about__special')
