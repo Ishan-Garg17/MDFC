@@ -21,7 +21,11 @@ const About = () => {
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
           >
-
+            <p>djwwwwwwww</p>
+            <p>djwwwwwwww</p>
+            <p>djwwwwwwww</p>
+            <p>djwwwwwwww</p>
+            <p>djwwwwwwww</p>
              
          </motion.div>
 

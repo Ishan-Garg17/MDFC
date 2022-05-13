@@ -9,10 +9,11 @@
 	background-position: center center;
     background-attachment: fixed;
 
+
     @media screen and (max-wdth: 480px) {
         width: 29rem;
         
-    }
+    } 
 }
 
 .app__header{
@@ -87,6 +88,11 @@
     border-radius: 8px;
     
     box-shadow: 10px 0px 30px rgba(0,0,1,0.2);
+
+    @media screen and (max-width: 350px) {
+        width: 17rem;
+        
+    }
 }
 .badge-cmp{
     span{
@@ -114,7 +120,7 @@
     margin-top: 21px;
     justify-content: space-evenly;
     align-items: center;
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:525px) {
      flex-direction: column;
         
     }
@@ -127,7 +133,7 @@
     span{
         color: white;
         font-size: 1rem;
-        @media screen and (max-width:400px) {
+        @media screen and (max-width:525px) {
            margin-top: 8px;
                
            }
