@@ -16,18 +16,18 @@ const About = () => {
   console.log(window.scrollY)
   return (
     <div className='app__about'>
-        <div className='about__form' data-aos="fade-in"
-           
-            data-aos-offset="100"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center">
+        <motion.div 
+         whileInView={{opacity: [0, 1] }}
+         transition={{
+           type: "spring",
+           stiffness: 260,
+           damping: 20
+         }}
+        className='about__form' >
         
           <Enquiry/>
         
-        </div>
+        </motion.div>
 
           <div className='about__section'>
               <Heading heading='MDFC' title='Welcome To'/>         

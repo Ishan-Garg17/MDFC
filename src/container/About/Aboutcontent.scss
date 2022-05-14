@@ -3,5 +3,100 @@
     align-self: center;
     margin-top: 15px;
     height: 100%;
-    width: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
 }
+
+.controllers{
+    display: flex;
+    flex-direction: column;
+    // width: 23rem;
+    // height: 32rem;
+    width: 20%;
+    height: 87%;
+    margin-top: 140px;
+    
+    @media screen and (max-width: 1040px) {
+            margin-top: 0px;
+    }
+    
+
+    .main__controller{
+        margin-bottom: 21px;
+        background-color: white;
+        -webkit-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        -moz-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+
+    button{
+        height: 4rem;
+        color: black;
+        width: 100%;
+        border: 0;
+        background: white;
+        border-bottom: 0.25px solid rgb(190, 190, 190);
+        border-right: 9px solid #c4025c;
+        }
+
+    }
+
+    button{
+        background: var(--gradient-shade);
+        border: none;
+        height: 2.4rem;
+        width: 85%;
+        margin: 0px auto;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 7px;
+        font-family:'Roboto', sans-serif;
+    }
+   
+}
+
+.carousel{
+    outline: 2px solid rgb(76, 0, 255);
+    margin-bottom: 53px;
+    // height: 448px;
+    // width: 43rem;
+    height: 75%;
+    width: 43%;     
+    overflow: hidden;
+
+    @media screen and (max-width: 1200px) {
+        width: 35rem;
+    }    
+    @media screen and (max-width: 1040px) {
+        margin-bottom: 23px;
+    }    
+    
+
+
+
+
+
+
+}
+.slider{
+    outline: 2px solid red;
+    height: 610%;
+    width: 100%;
+
+    
+    section{
+        // width: 100%;
+        outline: 2px solid green;
+        // flex-basis: 100%;
+        height: 16.5%;
+    }
+
+}
+// .tota{
+//     transform: translateY(-100%);
+// }
