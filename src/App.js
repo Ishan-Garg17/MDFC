@@ -16,10 +16,11 @@ function App() {
         {/* <Navbar/> */}
         <Header/>
         <About/>
+        <Footer/> 
         {/* <Work/>
           <Skills/>
           <Testimonials/>
-          <Footer/> */}
+         */}
     </div>
   );
 }

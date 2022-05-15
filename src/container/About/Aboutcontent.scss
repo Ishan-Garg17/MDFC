@@ -141,7 +141,7 @@
 
     
     section{
-        outline: 2px solid green;
+        background-color: white;
         height: 16.5%;
         
         display: flex;
@@ -188,20 +188,6 @@
             width: 95%;
             height: 52%;
 
-            // @media screen and (max-width: 1040px) {
-            //     height: 37%;
-             
-            //  }
-            // @media screen and (max-width: 900px) {
-            //     height: 50%;
-             
-            //  }
-
-            //  @media screen and (max-width: 500px) {
-            //     height: 50%;
-            //     // width: 40%; 
-            //  }
- 
         }
 
     }
@@ -228,3 +214,8 @@
  }
     
 }
+
+// .topa{
+//     // background-color: aliceblue;
+//     transform: translateY(-100%);
+// }

@@ -1,13 +1,17 @@
 .about__special{
     // margin-top: -85px;
-    height: 100vh;
+    height: 135vh;
+
+    .app__flex{
+        justify-content: flex-start;
+    }
 }
 
 .app__about{
     display: flex;
     // height: 100%;
     flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
     align-items: center;
     width: 100%;
    

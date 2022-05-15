@@ -18,7 +18,8 @@ class Aboutcontent extends React.Component {
       transition={{
         type: "spring",
         stiffness: 260,
-        damping: 20
+        damping: 20,
+        duration: 1
       }}
       className='about__content'>
   
@@ -119,7 +120,7 @@ class Aboutcontent extends React.Component {
                     </div>
 
                   </section>
-                  <section className='tota'>2 lorem lorem lorem lorem</section>
+                  <section className='topa'>2 lorem lorem lorem lorem</section>
                   <section>3 lorem lorem lorem lorem</section>
                   <section>4 lorem lorem lorem lorem</section>
                   <section>5 lorem lorem lorem lorem</section>
