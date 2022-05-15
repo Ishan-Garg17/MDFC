@@ -33,7 +33,8 @@ class Aboutcontent extends React.Component {
                       <button>5</button>
                       <button>6</button>
                   </div>
-                  <button>About Us</button>
+                  <br />
+                  <button className='about__button'>About Us</button>
               </div>
               <Dropdownbox/>
           </div>

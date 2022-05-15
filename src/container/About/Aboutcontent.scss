@@ -25,18 +25,20 @@
     margin-top: 140px;
     
     @media screen and (max-width: 1040px) {
+        .dropdown{
+            display: block !important;
+        }
         margin-top: 20px;
         height: 3rem;
         width: 48%;
     }
     
-    
+    .dropdown{
+        display: none;
+    }
     .main__controller{
         margin-bottom: 21px;
-        background-color: white;
-        -webkit-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
-        -moz-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
-        box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        
         
         
         @media screen and (max-width: 1040px) {
@@ -45,7 +47,12 @@
         
 
 
-    button{
+    .buttons{
+        background-color: white;
+        -webkit-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        -moz-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.45);
+        button{
         height: 4rem;
         color: black;
         width: 100%;
@@ -54,16 +61,18 @@
         border-bottom: 0.25px solid rgb(190, 190, 190);
         border-right: 9px solid #c4025c;
         }
+    
+    }
 
     }
 
-    button{
+    .about__button{
         background: var(--gradient-shade);
         border: none;
         height: 2.4rem;
         width: 85%;
-        margin: 0px auto;
-        color: white;
+        margin: 10px 26px;
+                color: white;
         text-transform: uppercase;
         font-size: 1rem;
         font-weight: 700;
