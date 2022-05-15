@@ -1,9 +1,9 @@
 import React from "react";
 import './Heading.scss'
-const Heading = ({heading,title}) => {
+const Heading = ({heading,title,footer}) => {
     
   return (
-    <div className="app__heading">
+    <div className={`app__heading ${footer}`}>
       <span>{title}</span>
       <h1>{heading}</h1>
       <div className="heading__line">

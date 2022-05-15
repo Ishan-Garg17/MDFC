@@ -4,11 +4,8 @@
   /* box-sizing: border-box; */
   /* flex-wrap: wrap; */
 }
-.section{
-  background-color: white;
-}
 body{
-  /* position: fixed; */
+  color: #e6e6e6;
 }
 :root {
   --font-base: "DM Sans", sans-serif;

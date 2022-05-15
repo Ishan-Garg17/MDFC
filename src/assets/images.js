@@ -34,6 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import footer_logo from '../assets/footer_logo.png';
 
 export default {
   email,
@@ -48,6 +49,7 @@ export default {
   html,
   javascript,
   mu5,
+  footer_logo,
   node,
   python,
   react,
