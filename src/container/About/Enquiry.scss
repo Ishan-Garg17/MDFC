@@ -64,7 +64,7 @@ input{
 }
 select{
     border: 0;
-    margin-top: 10px;
+    margin-top: 16px !important;
     border-bottom: 1px solid rgb(173, 172, 172);
     &:focus{
         outline: 0;
