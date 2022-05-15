@@ -1,7 +1,7 @@
 import React from 'react'
 import './Aboutcontent.scss'
 import { motion } from 'framer-motion'
-import Dropdown from './Dropdown'
+import Dropdownbox from './Dropdownbox'
 
 class Aboutcontent extends React.Component {
 
@@ -23,17 +23,19 @@ class Aboutcontent extends React.Component {
       className='about__content'>
   
           <div className='controllers'>
-          
+
               <div className="main__controller">
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
+                  <div className="buttons">
+                      <button>1</button>
+                      <button>2</button>
+                      <button>3</button>
+                      <button>4</button>
+                      <button>5</button>
+                      <button>6</button>
+                  </div>
+                  <button>About Us</button>
               </div>
-          <button>About US</button>
-  
+              <Dropdownbox/>
           </div>
   
   
@@ -50,7 +52,7 @@ class Aboutcontent extends React.Component {
   
           </div>
   
-          <Dropdown show={this.show}/>
+          
               
       </motion.div>
   
