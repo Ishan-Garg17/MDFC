@@ -39,17 +39,17 @@ const Footer = ({openMap}) => {
 
             <div className="contact_icon location__info">
                 <ImLocation size={32}/>
-                <span>Plot 521, (Basement) Sector 45, Gurugram, Haryana 122003</span>
+                <a href='https://www.google.com/maps/dir//MDFC+My+Dance+And+Fitness+Centre-,+plot+521,+Sector+45,+Gurugram,+Haryana+122003/@28.443323,77.069427,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d18c29e09556f:0xa7521f38fa1d43cd!2m2!1d77.06968!2d28.442955!3e0?hl=en'>Plot 521, (Basement) Sector 45, Gurugram, Haryana 122003</a>
             </div>
 
             <div className="contact_icon phoneNumber">
                 <BsTelephoneInboundFill/>
-                <span>+91 9871497596</span>
+                <a href="tel:+91-98714-97596">+91 9871497596</a>
             </div> 
             
             <div className="contact_icon mail__id">
               <GrMail/>
-                <span>mdfcgurgaon@gmail.com</span>
+                <a href='mailto:mdfcgurgaon@gmail.com'>mdfcgurgaon@gmail.com</a>
 
             </div> 
 
