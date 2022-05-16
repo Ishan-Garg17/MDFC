@@ -1,5 +1,7 @@
 .app__footer{
-    height: 40vh;
+    z-index: 10;
+    height: 44vh;
+    width: 100vw;
     outline: 2px solid red;
     background-color: white;
     display: flex;
@@ -7,11 +9,11 @@
     align-items: center;
     justify-content: space-evenly;
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1040px) {
         flex-direction: column;
-        height: 100vh;
+        height: 150vh;
 
-        width: 100%;
+        // width: 100%;
         
     }
 }
@@ -48,9 +50,38 @@
 .map{
     outline: 2px solid green;
     height: 100%;
-    // width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     flex-basis: 33%;
     flex-shrink: 1;
+
+    .google__map{
+        height: 80%;
+        width: 40%;
+        
+
+       
+
+
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 64, 89);
+        cursor: pointer;
+        font-weight: 800;
+        
+        &:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    
+    }
+
+
+    
 }
 
 .contact__info{
@@ -63,11 +94,11 @@
 
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
 
     .logo{
-        margin-left: 40px;
+        margin-left: 16px;
         height: 4rem;
         width: 6rem;
         // outline: 2px solid rgb(0, 0, 0);
@@ -78,19 +109,23 @@
     }
 
     .contact{
-        margin-left: 30px;
-        height: 10rem;
+        padding: 10px;
+        height: 14rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: 10px;
+        margin-top: 15px;
         
         .contact_icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
             height: 5.3rem;
-            margin: 10px;
+            // margin: 10px;
             svg{
                 // height: 10rem;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 margin-right: 20px;
                 color: rgb(255, 64, 89);
                 // line-height: 50px;
@@ -105,4 +140,8 @@
 
 .social_media{
     width: 19rem;
+}
+
+.phoneNumber,.mail__id{
+    margin-left: 5px;
 }
