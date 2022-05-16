@@ -10,7 +10,7 @@ import SocialMedia from '../../components/SocialMedia'
 
 
 
-const Footer = ({openMap}) => {
+const Footer = ({redirect}) => {
 
    return (
     <div className='app__footer'>
@@ -23,14 +23,14 @@ const Footer = ({openMap}) => {
       <div className=" map">
         <div className="google__map">
         
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.214322819631!2d77.06749131507833!3d28.442954982492935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18c29e09556f%3A0xa7521f38fa1d43cd!2sMDFC%20My%20Dance%20And%20Fitness%20Centre-!5e0!3m2!1sen!2sin!4v1652676148862!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}}></iframe>
+        <iframe title='embedded_map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.214322819631!2d77.06749131507833!3d28.442954982492935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18c29e09556f%3A0xa7521f38fa1d43cd!2sMDFC%20My%20Dance%20And%20Fitness%20Centre-!5e0!3m2!1sen!2sin!4v1652676148862!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}}></iframe>
         
         </div>
-        <a href='https://www.google.com/maps/dir//MDFC+My+Dance+And+Fitness+Centre-,+plot+521,+Sector+45,+Gurugram,+Haryana+122003/@28.443323,77.069427,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d18c29e09556f:0xa7521f38fa1d43cd!2m2!1d77.06968!2d28.442955!3e0?hl=en'>REACH US DIRECTLY</a>
+        <a onClick={()=>redirect}>REACH US DIRECTLY</a>
       </div>
 
       <div className=" contact__info">
-        
+          
         <div className="logo">
           <img src={images.footer_logo} alt="" />
         </div>

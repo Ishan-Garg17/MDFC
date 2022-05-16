@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.scss';
 
-import {About, Header, Work, Testimonials, Footer, Skills} from './container'
+import {About, Header, OurExpert, Testimonials, Footer} from './container'
 import {Navbar} from './components'
 import { Component } from 'react';
 
@@ -13,9 +12,9 @@ class App extends Component{
   //   }
   // })
 
-  openMap = (e)=>{
-      console.log(e.target.value)
-  }
+  redirect = (e)=>{
+    console.log(e)
+}
 
   render(){
   return (
@@ -23,11 +22,11 @@ class App extends Component{
         {/* <Navbar/> */}
         <Header/>
         <About/>
-        <Footer openMap={this.openMap} /> 
-        {/* <Work/>
-          <Skills/>
+        <OurExpert/>
+        {/* 
           <Testimonials/>
-         */}
+        */}
+        <Footer redirect={this.redirect} /> 
     </div>
        );
   }

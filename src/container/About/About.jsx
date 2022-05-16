@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import './About.scss'
-import images from '../../assets/images'
+// import images from '../../assets/images'
 import AppWrap from '../../wrapper/AppWrap'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
