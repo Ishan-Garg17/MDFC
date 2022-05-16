@@ -12,9 +12,9 @@ class App extends Component{
   //   }
   // })
 
-  redirect = (e)=>{
-    console.log(e)
-}
+//   onSearchChange = (e)=>{
+//     console.log(e)
+// }
 
   render(){
   return (
@@ -26,7 +26,7 @@ class App extends Component{
         {/* 
           <Testimonials/>
         */}
-        <Footer redirect={this.redirect} /> 
+        <Footer/> 
     </div>
        );
   }
