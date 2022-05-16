@@ -13,12 +13,31 @@ const Navbar = () => {
     setToggle((prevState) => !prevState);
   };
 
+  window.addEventListener('scroll',()=>{
+
+    const  side_bar = document.getElementById('side_bar')
+    const  navbar_links = document.getElementById('navbar_links')
+    if(window.scrollY>880)
+    {
+      navbar_links.style.display = 'none';
+      side_bar.style.display = 'flex';
+    }
+    else{
+      
+      navbar_links.style.display = 'flex';
+      side_bar.style.display = '';
+
+    }
+
+
+  })
+
   return (
     <nav className="app__navbar bg_color">
       <div className="app__navbar-logo">
         <img src={images.footer_logo} alt="logo" />
       </div>
-      <ul className="app__navbar-links">
+      <ul id="navbar_links" className="app__navbar-links">
         {
         ['home', 'about', 'testimonials', 'classes', 'contact'].map
         (
@@ -32,7 +51,7 @@ const Navbar = () => {
         }
       </ul>
 
-      <div className="app__navbar-menu">
+      <div id="side_bar" className="app__navbar-menu">
         <HiMenuAlt4 onClick={(e) => handleOnClick(e)} />
 
         {toggle && (
