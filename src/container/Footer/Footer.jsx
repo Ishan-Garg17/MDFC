@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.scss'
-
 import images from '../../assets/images'
 import Heading from '../../components/Heading'
 import {BsTelephoneInboundFill} from 'react-icons/bs'
@@ -21,7 +20,7 @@ const Footer = () => {
     <div className='app__footer'>
 
       <div className=" contact__us">
-          <Heading title='Any Question' heading='CONTACT US'  footer='footer__heading'  />
+          <Heading title='Any Question' heading='CONTACT US'/>
           <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
@@ -60,12 +59,9 @@ const Footer = () => {
 
         </div>
 
-        <div className="social_media">
-
-          <SocialMedia/>
-
-
-        </div>
+          <div className="social_media"> 
+              <SocialMedia/>
+          </div>
       </div>
     
 

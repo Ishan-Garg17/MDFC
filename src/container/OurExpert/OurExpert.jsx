@@ -15,7 +15,7 @@ const OurExpert = () => {
       transition={{
         type: "spring",
         stiffness: 260,
-        damping: 20
+        damping: 2
       }}
       className="expert_content">
 

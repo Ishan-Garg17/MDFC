@@ -5,21 +5,18 @@ import {Navbar} from './components'
 import { Component } from 'react';
 
 class App extends Component{
-  // window.addEventListener('scroll',()=>{
-
-  //   if(window.scrollY>100){
-  //     console.log("huaaa")
-  //   }
-  // })
-
-//   onSearchChange = (e)=>{
-//     console.log(e)
-// }
-
-  render(){
+  
+    render(){
+    // window.addEventListener('scroll',()=>{
+  
+    //   if(window.scrollY>100){
+    //     console.log("huaaa")
+    //   }
+    // })
+    
   return (
     <div className="App">
-        {/* <Navbar/> */}
+        <Navbar/>
         <Header/>
         <About/>
         <OurExpert/>

@@ -3,12 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0rem 2rem;
-    // background-color: aliceblue;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(2px);
-
     position: fixed;
     z-index: 2;
 }
@@ -17,13 +14,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 21px;
-    // background-color: rebeccapurple;
-    // height: 200px;
+    margin: 19px;
     img{
-        width: 100px;
-        height: 84px;
-        // filter: brightness(0) invert(1);
+        width: 80px;
+        height: 54px;
         @media screen and (min-width: 2000px){
             width: 155px;
             height: 123px;
@@ -35,7 +29,7 @@
 
 .app__navbar-links{
     display: flex;
-    flex: 1; //to give it all the space that logo will not take
+    flex: 1; 
     justify-content: flex-end;
     margin-right: 92px;
     align-items: center;
@@ -51,29 +45,25 @@
             width: 5px;
             height: 5px;
             background: transparent;
-            // background-color: b;
             border-radius: 50%;
         }
 
         a{
-            color: red;
+            color: rgb(255, 0, 76);
             text-decoration: none;
-            // flex-direction: column;
-
             text-transform: uppercase;
             font-weight: 700;
             font-size: 1.2rem;
-
             transition: all 0.3s ease-out;
-
+            
             &:hover{
-                color: red;
+                color: rgb(0, 0, 0);
             }
         }
 
         &:hover{
             div{
-                background-color: red;
+                background-color: rgb(255, 22, 111);
             }
         }
     }
@@ -88,14 +78,10 @@
     width: 35px;
     height: 35px;
     border-radius: 30%;
-    // position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--secondary-color);
-
 
     svg{
         width: 70%;
@@ -115,7 +101,6 @@
         width: 50%;
         height: 100vh;
         background-color: white;
-        // background: url('../../assets/bgWhite.png');
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168,168,168,0.15);
@@ -124,21 +109,15 @@
             height: 35px;
             width: 35px;
             padding: 2px;
-            // border-radius: 12px;
             color: var(--secondary-color);
         }
 
         ul{
             display: flex;
             flex-direction: column;
-
             list-style: none;
-            
-
             justify-content: flex-start;
             align-items: flex-start;
-
-
 
             li{
                 margin: 1.3rem 1rem;
@@ -152,18 +131,12 @@
                         color: var(--secondary-color);
                     }
                 }
-
-
             }
         }
-
-
     }
 
     @media screen and (min-width: 900px) {
         display: none;
-        
     }
-
 }
 
