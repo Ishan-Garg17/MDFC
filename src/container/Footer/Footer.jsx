@@ -7,7 +7,7 @@ import {BsTelephoneInboundFill} from 'react-icons/bs'
 import {ImLocation} from 'react-icons/im'
 import {GrMail} from 'react-icons/gr'
 import SocialMedia from '../../components/SocialMedia'
-
+import AppWrap from '../../wrapper/AppWrap'
 
 
 const Footer = () => {
@@ -21,14 +21,12 @@ const Footer = () => {
     <div className='app__footer'>
 
       <div className=" contact__us">
-          <Heading title='Any Question' heading='CONTACT US'  footer='footer__special'  />
-          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,</p>
+          <Heading title='Any Question' heading='CONTACT US'  footer='footer__heading'  />
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
       <div className=" map">
-        <div 
-        
-        className="google__map">
+        <div  className="google__map">
         
         <iframe title='embedded_map' src={links.map} width="100%" height="100%" style={{border:0}}></iframe>
         
@@ -46,7 +44,7 @@ const Footer = () => {
 
             <div className="contact_icon location__info">
                 <ImLocation size={32}/>
-                <a href='https://www.google.com/maps/dir//MDFC+My+Dance+And+Fitness+Centre-,+plot+521,+Sector+45,+Gurugram,+Haryana+122003/@28.443323,77.069427,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d18c29e09556f:0xa7521f38fa1d43cd!2m2!1d77.06968!2d28.442955!3e0?hl=en'>Plot 521, (Basement) Sector 45, Gurugram, Haryana 122003</a>
+                <a className='location_text' href='https://www.google.com/maps/dir//MDFC+My+Dance+And+Fitness+Centre-,+plot+521,+Sector+45,+Gurugram,+Haryana+122003/@28.443323,77.069427,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d18c29e09556f:0xa7521f38fa1d43cd!2m2!1d77.06968!2d28.442955!3e0?hl=en'>Plot 521, (Basement) Sector 45, Gurugram, Haryana 122003</a>
             </div>
 
             <div className="contact_icon phoneNumber">
@@ -75,4 +73,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default AppWrap(Footer, "contact", "footer__special");
