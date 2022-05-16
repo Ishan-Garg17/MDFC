@@ -57,10 +57,15 @@
     flex-basis: 33%;
     flex-shrink: 1;
 
+    @media screen and(max-width:1040px) {
+        width: 100%;
+        
+    }
+
     .google__map{
         height: 80%;
-        width: 40%;
-        
+        // width: 40%;
+
 
        
 
