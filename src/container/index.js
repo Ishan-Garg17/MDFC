@@ -1,4 +1,4 @@
-export {default as About } from './About/About'
+export {default as About } from './About/main/About'
 export {default as OurExpert } from './OurExpert/OurExpert'
 export {default as Footer } from './Footer/Footer'
 export {default as Header } from './Header/Header'

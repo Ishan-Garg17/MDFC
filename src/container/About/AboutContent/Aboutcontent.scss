@@ -18,8 +18,6 @@
 .controllers{
     display: flex;
     flex-direction: column;
-    // width: 23rem;
-    // height: 32rem;
     width: 27%;
     height: 85%;
     margin-top: 140px;
@@ -84,7 +82,7 @@
             }
             h3{
                 font-family: 'roboto';
-                font-weight: 800;
+                font-weight: 1000;
                 margin-bottom: -0.2px;
             }
         }
@@ -114,7 +112,6 @@
 
 .carousel{
     outline: 2px solid rgb(76, 0, 255);
-    // margin-bottom: 53px;
     height: 75%;
     width: 43%;     
     overflow: hidden;
@@ -125,7 +122,6 @@
     }
     @media screen and (max-width: 1200px) {
         width: 63%;
-        // height: 85%;
         margin-bottom: 0;
     }    
     @media screen and (max-width: 1040px) {
@@ -135,12 +131,12 @@
     
 }
 .slider{
-    // outline: 2px solid red;
-    height: 610%;
-    width: 100%;
-
+    // height: 610%;
+    // width: 100%;
+    // transition: all 1s ease-out;
     
     section{
+        transition: all 0.5s ease-out;
         background-color: white;
         height: 16.5%;
         
@@ -151,11 +147,9 @@
         
         @media screen and (max-width: 1040px) {
             align-items: center;
-            
         }
 
         div:nth-child(1) {
-
             height: 65%;
             width: 66%;
           
@@ -163,14 +157,11 @@
             height: 65%;
             width: 90%;
             }
-        // @media screen and (max-width: 300px) {
-        //         height: 25% !important;
-        //         // width: 60%; 
-        //      }
+        
         @media screen and (max-width: 400px) {
                 height: 40%;
-                // width: 40%; 
              }
+
             img{
                 height: 100%;
                 width: 100%;
@@ -187,7 +178,6 @@
 
             @media screen and (max-width: 400px) {
                 height: 70%;
-                // width: 40%; 
              }
 
         }
@@ -203,7 +193,6 @@
     flex-wrap: wrap;
     margin-top: 4px;
     li{
-        // margin-left: 8px;
         width: 100%;
     }
 }
@@ -216,8 +205,3 @@
  }
     
 }
-
-// .topa{
-//     // background-color: aliceblue;
-//     transform: translateY(-100%);
-// }

@@ -1,14 +1,17 @@
 import React from 'react'
 import './Aboutcontent.scss'
 import { motion } from 'framer-motion'
-import Dropdownbox from './Dropdownbox'
-import images from '../../assets/images'
+import Dropdownbox from '../Dropdownbox'
+import images from '../../../assets/images'
 class Aboutcontent extends React.Component {
 
-  show = (anything)=>{
-    let input= document.querySelector('.textBox').value;
-    input.value=anything;
- }
+  constructor(){
+    super();
+
+    this.state = {
+      
+    }
+  }
 
 
   render() {
@@ -27,68 +30,68 @@ class Aboutcontent extends React.Component {
 
               <div className="main__controller">
                   <div className="buttons">
-                      <button>
-                        <div>
-                          <h3>
+                      <button id='1' >
+                        <div  id='1'>
+                          <h3 id='1'>
                             5+ Different
                           </h3>
-                          <span>
+                          <span id='1'>
                               Categories
                           </span>
                         </div>
                       </button>
                       
-                      <button>
-                        <div>
+                      <button id='2' >
+                        <div id='2'>
                           <h3>
-                            5+ Different
+                            Corporate
                           </h3>
                           <span>
-                              Categories
+                              Choreography
                           </span>
                         </div>
                       </button>
                       
-                      <button>
-                        <div>
-                          <h3>
-                            5+ Different
+                      <button id='3' >
+                        <div  id='3'>
+                          <h3  id='3'>
+                            Wedding
                           </h3>
-                          <span>
-                              Categories
+                          <span  id='3'>
+                          Choreography
                           </span>
                         </div>
                       </button>
                       
-                      <button>
-                        <div>
-                          <h3>
-                            5+ Different
+                      <button id='4' >
+                        <div id='4'>
+                          <h3 id='4'>
+                            Competition
                           </h3>
-                          <span>
-                              Categories
+                          <span id='4'>
+                            Training
                           </span>
                         </div>
                       </button>
                       
-                      <button>
-                        <div>
-                          <h3>
-                            5+ Different
+                      <button id='5' >
+                        <div id='5'>
+                          <h3 id='5'>
+                            Kids Summer
                           </h3>
-                          <span>
-                              Categories
+                          <span id='5'>
+                              Camp
                           </span>
                         </div>
                       </button>
                       
-                      <button>
-                        <div>
-                          <h3>
-                            5+ Different
+                      <button id='6' >
+                        <div id='6'>
+                          <h3 id='6'>
+                          Kids Winter
                           </h3>
-                          <span>
-                              Categories
+                          <span id='6'>
+                          Camp
                           </span>
                         </div>
                       </button>
@@ -102,9 +105,9 @@ class Aboutcontent extends React.Component {
   
   
           <div className="carousel">
-  
-              <div className="slider">
-                  <section>
+
+                  <section id='section-1'>
+                    
                     <div className="section__image">
                         <img src={images.about01} alt="" />
                     </div>
@@ -120,17 +123,9 @@ class Aboutcontent extends React.Component {
                     </div>
 
                   </section>
-                  <section className='topa'>2 lorem lorem lorem lorem</section>
-                  <section>3 lorem lorem lorem lorem</section>
-                  <section>4 lorem lorem lorem lorem</section>
-                  <section>5 lorem lorem lorem lorem</section>
-                  <section>6 lorem lorem lorem lorem</section>
-              </div>
-  
+                  
           </div>
-  
-          
-              
+                
       </motion.div>
   
                
