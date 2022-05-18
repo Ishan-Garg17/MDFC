@@ -7,12 +7,8 @@ import { Component } from 'react';
 class App extends Component{
   
     render(){
-    // window.addEventListener('scroll',()=>{
-  
-    //   if(window.scrollY>100){
-    //     console.log("huaaa")
-    //   }
-    // })
+      const date = new Date()
+      const year = date.getFullYear()
     
   return (
     <div className="App">
@@ -24,6 +20,9 @@ class App extends Component{
           <Testimonials/>
         */}
         <Footer/> 
+        <div className="copyright">
+        <span>Copyright {year}. All rights resrved. </span>
+        </div>
     </div>
        );
   }

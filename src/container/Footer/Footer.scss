@@ -1,3 +1,13 @@
+
+.footer__special{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: space-evenly;
+
+}
 .app__footer{
     // z-index: 10;
     height: 50%;
@@ -14,6 +24,7 @@
         height: 100%;     
     }
 }
+
 .contact__us{
     
     div{
@@ -62,7 +73,7 @@
         flex-direction: row;
         
         .google__map{
-            width: 40% !important;
+            width: 55% !important;
             height: 85% !important;
         }
     }
@@ -174,3 +185,8 @@
         font-size: 12px !important;
     }
 }
+
+// .space__between{
+//     align-items: space-between !important;
+//     margin-top: 1rem;
+// }

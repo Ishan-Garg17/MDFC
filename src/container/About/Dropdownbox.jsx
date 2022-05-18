@@ -4,17 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown } from 'react-bootstrap';
 import './Dropdownbox.scss'
 
-const Dropdownbox = () => {
+const Dropdownbox = ({contentInSection}) => {
   return (
   <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Dropdown Button
+    See More
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="1">5+ Different Categories</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection}  id="2">Corporate  Choreography</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="3">Wedding Choreography</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="4"> Competition  Training</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="5"> Kids Summer Camp</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="6"> Kids Winter Camp</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
   )

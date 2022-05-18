@@ -4,6 +4,7 @@ import Heading from "../../components/Heading";
 import AppWrap from "../../wrapper/AppWrap";
 import images from '../../assets/images'
 import { motion } from "framer-motion";
+import CarouselImage from "./CarouselImage";
 
 const OurExpert = () => {
   return (
@@ -20,9 +21,8 @@ const OurExpert = () => {
       className="expert_content">
 
         <div className="main_image">
-
-            <img src={images.himanshu} alt="" />
-          
+            <CarouselImage/>
+            
 
           </div>
         
@@ -30,7 +30,6 @@ const OurExpert = () => {
             <p>
             Dancing for more than 15 years now and teaching for more than 12 years, Himanshu Bundela - the founder of MDFC believes to inspire, guide and help the next generation to enhance their talent and pave their way to success.
             Professionally trained from leading dance schools of Delhi such as Central  Contemporary Ballet, Big Dance Centre and Delhi Dance Academy Himanshu   specialises in the following dance forms: Contemporary, Ballet, Jazz,   Gymnastics, Hip Hop, Bollywood, Bhangra, Salsa, B-boying.
-
             </p>
           </div>
         
@@ -44,8 +43,8 @@ const OurExpert = () => {
         damping: 20,
         duration: 1.5
       }}
-      
       className="expert_points">
+
         <ul>
           <li>
           An expert &amp; specialized trainer at using creative movements for toddlers as young as
@@ -65,6 +64,7 @@ const OurExpert = () => {
 
           </li>
         </ul>
+        
       </motion.div>
     </div>
   );

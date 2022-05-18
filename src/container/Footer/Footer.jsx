@@ -17,8 +17,9 @@ const Footer = () => {
     }
 
    return (
-    <div className='app__footer'>
-
+     <>
+     {/* <div className='footer__special'> */}
+        <div className='app__footer'>
       <div className=" contact__us">
           <Heading title='Any Question' heading='CONTACT US'/>
           <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -63,10 +64,10 @@ const Footer = () => {
               <SocialMedia/>
           </div>
       </div>
-    
-
-    </div>
+        </div>
+    {/* </div> */}
+    </>
   )
 }
 
-export default AppWrap(Footer, "contact", "footer__special");
+export default AppWrap(Footer, "contact");

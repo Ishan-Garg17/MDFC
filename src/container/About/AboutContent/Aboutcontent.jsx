@@ -3,17 +3,36 @@ import './Aboutcontent.scss'
 import { motion } from 'framer-motion'
 import Dropdownbox from '../Dropdownbox'
 import images from '../../../assets/images'
+import ContentCard from './ContentCard'
 class Aboutcontent extends React.Component {
 
   constructor(){
     super();
 
     this.state = {
-      
+      imageURL: images.about01,
+      title: '',
+      content: ''
     }
   }
 
+  contentInSection = (e)=> {
+    var id = (e.target.id);
 
+    if(id==1){
+
+      this.setState({
+        title: 'We have Different Classes for all the Age-Groups.',
+        content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)']
+      })
+      
+
+    }
+
+
+
+  }
+  // 
   render() {
     return (
       <motion.div
@@ -30,7 +49,7 @@ class Aboutcontent extends React.Component {
 
               <div className="main__controller">
                   <div className="buttons">
-                      <button id='1' >
+                      <button id='1' onClick={this.contentInSection}>
                         <div  id='1'>
                           <h3 id='1'>
                             5+ Different
@@ -41,7 +60,7 @@ class Aboutcontent extends React.Component {
                         </div>
                       </button>
                       
-                      <button id='2' >
+                      <button id='2'  onClick={this.contentInSection}>
                         <div id='2'>
                           <h3>
                             Corporate
@@ -52,7 +71,7 @@ class Aboutcontent extends React.Component {
                         </div>
                       </button>
                       
-                      <button id='3' >
+                      <button id='3' onClick={this.contentInSection} >
                         <div  id='3'>
                           <h3  id='3'>
                             Wedding
@@ -63,7 +82,7 @@ class Aboutcontent extends React.Component {
                         </div>
                       </button>
                       
-                      <button id='4' >
+                      <button id='4' onClick={this.contentInSection}>
                         <div id='4'>
                           <h3 id='4'>
                             Competition
@@ -74,7 +93,7 @@ class Aboutcontent extends React.Component {
                         </div>
                       </button>
                       
-                      <button id='5' >
+                      <button id='5' onClick={this.contentInSection}>
                         <div id='5'>
                           <h3 id='5'>
                             Kids Summer
@@ -85,7 +104,7 @@ class Aboutcontent extends React.Component {
                         </div>
                       </button>
                       
-                      <button id='6' >
+                      <button id='6' onClick={this.contentInSection}>
                         <div id='6'>
                           <h3 id='6'>
                           Kids Winter
@@ -100,30 +119,14 @@ class Aboutcontent extends React.Component {
                   <br />
                   <button className='about__button'>About Us</button>
               </div>
-              <Dropdownbox/>
+
+              <Dropdownbox contentInSection={this.contentInSection}/>
+              
           </div>
   
   
-          <div className="carousel">
-
-                  <section id='section-1'>
-                    
-                    <div className="section__image">
-                        <img src={images.about01} alt="" />
-                    </div>
-                    <div className="section__content section_1">
-                       <p>We have Different Classes for all the Age-Groups.</p>
-                        <ul className='content__list'>
-                          <li>Creative Movements Junior (1.5 years - 2.5 years) </li>
-                          <li>Creative Movements Senior (3 years - 5 years)  </li>
-                          <li>Kids Dance a Gymnastics (6 years - 10 years) </li>
-                          <li>Teens a Adults Dance a Gymnastics ( 10+ years and above)  </li>
-                          <li>Senior Citizens Dance a Fitness (45+ years and above)  </li>
-                        </ul>
-                    </div>
-
-                  </section>
-                  
+          <div className="carousell ">
+                  <ContentCard title={this.state.title} content={this.state.content} imageURL={this.state.imageURL}/>
           </div>
                 
       </motion.div>

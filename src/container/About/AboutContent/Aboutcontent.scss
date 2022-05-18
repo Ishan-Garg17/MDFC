@@ -86,13 +86,10 @@
                 margin-bottom: -0.2px;
             }
         }
-
-
         }
-    
     }
 
-    }
+}
 
     .about__button{
         background: var(--gradient-shade);
@@ -110,7 +107,7 @@
    
 }
 
-.carousel{
+.carousell{
     outline: 2px solid rgb(76, 0, 255);
     height: 75%;
     width: 43%;     
@@ -130,15 +127,11 @@
     }    
     
 }
-.slider{
-    // height: 610%;
-    // width: 100%;
-    // transition: all 1s ease-out;
-    
-    section{
+section{
         transition: all 0.5s ease-out;
         background-color: white;
-        height: 16.5%;
+        height: 100%;
+        width: 100%;
         
         display: flex;
         flex-direction: column;
@@ -182,9 +175,7 @@
 
         }
 
-    }
 }
-
 // FOR FIRST SECTION 
 
 .content__list{

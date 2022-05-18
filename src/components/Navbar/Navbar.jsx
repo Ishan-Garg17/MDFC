@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
+  
   const handleOnClick = (e) => {
     e.stopPropagation();
     setToggle((prevState) => !prevState);

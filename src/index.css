@@ -16,3 +16,8 @@
   --gray-color: #6b7688;
   --white-color: #ffffff;
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

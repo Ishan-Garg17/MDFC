@@ -19,7 +19,7 @@ import AppWrap from '../../wrapper/AppWrap';
 const Header = () => (
   <>
     <motion.div
-      whileInView={{ x: [-600, -380], opacity: [0, 1] }}
+      whileInView={{ x: [-600,300], opacity: [0, 1] }}
       transition={{ duration: 0.7 }}
       className="app__header-info"
     >
