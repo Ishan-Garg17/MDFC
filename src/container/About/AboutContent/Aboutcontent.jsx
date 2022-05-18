@@ -11,8 +11,9 @@ class Aboutcontent extends React.Component {
 
     this.state = {
       imageURL: images.about01,
-      title: '',
-      content: ''
+      title: 'We have Different Classes for all the Age-Groups.',
+      content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)'],
+      specialClass: ''
     }
   }
 
@@ -22,10 +23,61 @@ class Aboutcontent extends React.Component {
     if(id==1){
 
       this.setState({
+        imageURL: images.about01,
         title: 'We have Different Classes for all the Age-Groups.',
-        content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)']
+        content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)'],
+        specialClass: ''
+      })
+    }
+    
+    else if(id==2){
+
+      this.setState({
+        imageURL: images.about01,
+        title: 'Corporate Choreography',
+        content: ['Amazon','Key sight','Analec infotech','Wunderman','K & S partners', 
+        'Amar Jain Clothing', 'WWF','IIT', 'Russian Embassy', 'Raahgiri',   'American Embassy'],
+        specialClass: 'reduceWidth'
       })
       
+    }    
+    
+    else if(id==3){
+
+      this.setState({
+        imageURL: images.about03,
+        title: 'Wedding Choreography',
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+      })
+      
+    }   
+    
+    else if(id==4){
+
+      this.setState({
+        imageURL: images.about04,
+        title: 'Training for various competitions',
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+      })
+      
+    }
+
+    else if(id==5){
+
+      this.setState({
+        imageURL: images.about05,
+        title: 'Special Classes for Kids during Summers',
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+      })
+    }
+
+    else if(id==6){
+
+      this.setState({
+        imageURL: images.about06,
+        title: 'Special Classes for Kids during Winters',
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+      })
 
     }
 
@@ -121,12 +173,12 @@ class Aboutcontent extends React.Component {
               </div>
 
               <Dropdownbox contentInSection={this.contentInSection}/>
-              
+
           </div>
   
   
           <div className="carousell ">
-                  <ContentCard title={this.state.title} content={this.state.content} imageURL={this.state.imageURL}/>
+                  <ContentCard title={this.state.title} content={this.state.content} imageURL={this.state.imageURL} specialClass={this.state.specialClass}/>
           </div>
                 
       </motion.div>
