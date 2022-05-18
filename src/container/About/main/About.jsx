@@ -16,16 +16,17 @@ const About = () => {
   return (
     <div className='app__about'>
         <motion.div 
-         whileInView={{opacity: [0, 1] }}
-         transition={{
-           type: "spring",
-           stiffness: 260,
-           damping: 20
-         }}
+          whileInView={{ scale: [0,1], opacity: [0, 1] }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            duration: 1
+          }}
         className='about__form' >
-        
-          <Enquiry/>
-        
+                  
+                  <Enquiry/>
+
         </motion.div>
 
           <div className='about__section'>
@@ -37,4 +38,4 @@ const About = () => {
   )
 }
 
-export default AppWrap(About,'about','about__special')
+export default AppWrap(About,'Classes','about__special')

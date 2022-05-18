@@ -9,17 +9,17 @@ const SocialMedia = () => {
   return(
     <div className='app__social'>
         <div>
-        <a>
+        <a href="https://www.instagram.com/mdfc_mydanceandfitnesscentre/">
             <BsInstagram />
             </a>
         </div>
          <div>
-         <a href="http://twitter.com">
+         <a href="https://www.facebook.com/mdfcgurgaon">
             <FaFacebookF />
             </a>
         </div> 
         <div>
-        <a href="http://twitter.com">
+        <a href="https://www.youtube.com/channel/UCRjBlqWTbsx36qg6o8wkVCw">
             <BsYoutube/>
             </a>
         </div>

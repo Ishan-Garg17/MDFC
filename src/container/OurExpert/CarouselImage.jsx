@@ -7,7 +7,7 @@ const CarouselImage = () => {
   return (
     <Carousel>
   
-  <Carousel.Item>
+  <Carousel.Item interval={2200}>
     <img
       className="d-block w-100"
       src={images.himanshu3}
@@ -15,7 +15,7 @@ const CarouselImage = () => {
     />
   </Carousel.Item>
   
-  <Carousel.Item>
+  <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
       src={images.himanshu2}
@@ -23,7 +23,7 @@ const CarouselImage = () => {
     />
   </Carousel.Item>
   
-  <Carousel.Item>
+  <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
       src={images.himanshu}
@@ -31,7 +31,7 @@ const CarouselImage = () => {
     />
   </Carousel.Item> 
   
-  <Carousel.Item>
+  <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
       src={images.himanshu4_1}

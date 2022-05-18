@@ -13,21 +13,28 @@
     width: 100%;
    
     .about__form{
-        width: 50rem;
-        height: 11rem;
+        width: 54rem;
+        height: 10rem;
 
         @media screen and (max-width: 950px) {
-            height: 24rem;
-            width: 24rem    ;
+            height: 16rem;
+            width: 40rem ;
             border-radius: 15px;
             
         }
-        @media screen and (max-width: 400px) {
-            height: 20rem;
+        @media screen and (max-width: 670px) {
+            height: 16rem;
+            width: 30rem;
+            border-radius: 15px;
+        }
+        
+        @media screen and (max-width: 500px) {
+            height: 21rem;
             width: 18rem;
             border-radius: 15px;
-        
         }
+
+
         display: flex;
         justify-content: center;
         align-items: center;

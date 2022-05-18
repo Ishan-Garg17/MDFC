@@ -20,7 +20,7 @@ class Aboutcontent extends React.Component {
   contentInSection = (e)=> {
     var id = (e.target.id);
 
-    if(id==1){
+    if(id==='1'){
 
       this.setState({
         imageURL: images.about01,
@@ -30,7 +30,7 @@ class Aboutcontent extends React.Component {
       })
     }
     
-    else if(id==2){
+    else if(id==='2'){
 
       this.setState({
         imageURL: images.about01,
@@ -42,7 +42,7 @@ class Aboutcontent extends React.Component {
       
     }    
     
-    else if(id==3){
+    else if(id==='3'){
 
       this.setState({
         imageURL: images.about03,
@@ -52,7 +52,7 @@ class Aboutcontent extends React.Component {
       
     }   
     
-    else if(id==4){
+    else if(id==='4'){
 
       this.setState({
         imageURL: images.about04,
@@ -62,7 +62,7 @@ class Aboutcontent extends React.Component {
       
     }
 
-    else if(id==5){
+    else if(id==='5'){
 
       this.setState({
         imageURL: images.about05,
@@ -71,7 +71,7 @@ class Aboutcontent extends React.Component {
       })
     }
 
-    else if(id==6){
+    else if(id==='6'){
 
       this.setState({
         imageURL: images.about06,

@@ -30,7 +30,7 @@ const Enquiry = () => {
         </div>
 
         <div>
-          <button className='btn'>Enquire Now</button>
+          <button className='button'>Enquire Now</button>
         </div>
 
     </div>
