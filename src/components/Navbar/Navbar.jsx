@@ -17,7 +17,7 @@ const Navbar = () => {
 
     const  side_bar = document.getElementById('side_bar')
     const  navbar_links = document.getElementById('navbar_links')
-    if(window.scrollY>880)
+    if(window.scrollY>580)
     {
       navbar_links.style.display = 'none';
       side_bar.style.display = 'flex';

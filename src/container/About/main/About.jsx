@@ -2,14 +2,10 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import './About.scss'
 import AppWrap from '../../../wrapper/AppWrap'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Heading from '../../../components/Heading'
 
 import Enquiry from '../Enquiry'
 import Aboutcontent from '../AboutContent/Aboutcontent'
-
-AOS.init();
 
 const About = () => {
   console.log(window.scrollY)

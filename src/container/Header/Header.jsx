@@ -2,19 +2,6 @@ import React from 'react'
 import './Header.scss'
 import { motion } from 'framer-motion'
 import AppWrap from '../../wrapper/AppWrap';
-// import {NavigationDots} from '../../components'
-
-
-// const scaleVariants = {
-//   whileInView: {
-//     scale: [0, 1],
-//     opacity: [0, 1],
-//     transition: {
-//       duration: 1,
-//       ease: 'easeInOut',
-//     },
-//   },
-// };
 
 const Header = () => (
   <>
