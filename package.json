@@ -1,6 +1,7 @@
 {
   "name": "frontend-app",
   "version": "0.1.0",
+  "homepage": "https://Ishan-Garg17.github.io/MDFC",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
@@ -11,15 +12,17 @@
     "bootstrap": "^5.1.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^6.3.3",
+    "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.1",
-    "node-sass": "^7.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,6 @@
     ]
   },
   "devDependencies": {
-   
+    "gh-pages": "^4.0.0"
   }
 }
