@@ -47,9 +47,10 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about03,
         title: 'Wedding Choreography',
-        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+        content: '',
+        specialClass: ''
+      //
       })
-      
     }   
     
     else if(id==='4'){
@@ -57,7 +58,8 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about04,
         title: 'Training for various competitions',
-        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor',
+        specialClass: ''
       })
       
     }
@@ -67,7 +69,8 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about05,
         title: 'Special Classes for Kids during Summers',
-        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor',
+        specialClass: ''
       })
     }
 
@@ -76,7 +79,19 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about06,
         title: 'Special Classes for Kids during Winters',
-        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor'
+        content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor',
+        specialClass: ''
+      })
+
+    }
+    
+    else if(id==='7'){
+
+      this.setState({
+        imageURL: '',
+        title: 'There’s no stronger way to believe something than to experience it.',
+        content: ['MDFC has always been focussed towards that ‘Emotional Quotient’ of clients’ expectations and strived to achieve brilliance and perfection in every experience that we create.', 'MDFC was born out of zeal to create a true client-centric agency who could quickly turn around clients’ needs into action plans. Dancing Fitness are great ways to meet people in a non-threatening, relaxed social atmosphere. And MDFC provides the same.', 'With its headquarters in Gurgaon, this premium dance academy boasts of a plethora of dance and fitness services under the tutelage of highly trained and passionate instructors. The academy offers beginners and advanced dance instruction as well as high level competition training in various dance forms such as contemporary, jazz, hip hop, salsa, bollywood, gymnastics, zumba, acrobats and yoga. The brand also boasts of a gamut of professionally trained dancers, performers  &amp; instructors who are well equipped to make dancing a fun affair for anyone. Adding to our repertoire MDFC also specializes in organizing workshops &amp; activities at corporates all across Delhi NCR. Like most other dance academies, MDFC studio displays state of the art interiors which include wooden flooring, full mirror coverage, high end sound system and is also well equipped with CCTV cameras. The brand which strongly believes in the motto &#39;Give wings to your dreams&#39;, helps you let go of your inhibitions, push your limits and express yourself. And it is this warmth displayed by the MDFC family which attracts students from all age groups and diverse cultures. From a 3 year old student to a 60+ year old student, from Indian students to students who have come from other countries, MDFC is proud of training such a wide variety of students across all genres'],
+        specialClass: 'about_mdfc'
       })
 
     }
@@ -169,7 +184,7 @@ class Aboutcontent extends React.Component {
 
                   </div>
                   <br />
-                  <button className='about__button'>About Us</button>
+                  <button id='7' onClick={this.contentInSection} className='about__button'>About Us</button>
               </div>
 
               <Dropdownbox contentInSection={this.contentInSection}/>

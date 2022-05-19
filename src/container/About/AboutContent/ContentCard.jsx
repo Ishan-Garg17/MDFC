@@ -1,36 +1,44 @@
 import React from 'react'
 
 const ContentCard = ({title,content,imageURL,specialClass}) => {
-     
-    if(typeof(content)==='object')
+    //  console.log(specialClass)
+   if(specialClass==='about_mdfc')
+      {
+        return(
+          <section id='section-1' className={`${specialClass}`}>
+            <div className="section__content section_1">
+                       <span>{title}</span>
+                       <p>{content[0]}</p>
+                       <p>{content[1]}</p>
+                       <p>{content[2]}</p>
+                    </div>
+          </section>
+        )
+      }
+      else if(typeof(content)==='object')
       {
         return( 
-        <section id='section-1'>
+        <section id='section-1' className={`${specialClass}`}>
                     <div className="section__image">
                         <img src={imageURL} alt="" />
                     </div>
                     <div className="section__content section_1">
                        <span>{title}</span>
-                        <ul className={`content__list ${specialClass}`}>
+                        <ul className={`content__list`}>
                           {
                             content.map((item)=>(
-                              <li>{item}</li>
+                              <li key={item}>{item}</li>
                             ))
                           }
-                          
-                          {/* <li>{content[0]}</li>
-                          <li>{content[1]}</li>
-                          <li>{content[2]}</li>
-                          <li>{content[3]}</li>
-                          <li>{content[4]}</li> */}
                         </ul>
                     </div>
          </section>
         )
       }
+   
       else{
         return(
-        <section id='section-1'>
+        <section id='section-1' className={`${specialClass}`}>
 
                     <div className="section__image">
                         <img src={imageURL} alt="" />
