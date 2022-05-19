@@ -10,12 +10,13 @@ const Enquiry = () => {
     
     emailjs.sendForm('service_jkr5r3g', 'template_xqimv7q', e.target, 'Kk4iOfHC6kz-zQpYd')
       .then(() => {
+        e.target.reset()
         e.target.style.display = "none";
         afterSubmit.style.display = "block"
       }, (error) => {
           console.log(error.text);
       });
-    e.target.reset()
+    
   }
   
   
