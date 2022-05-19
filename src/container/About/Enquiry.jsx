@@ -1,39 +1,60 @@
 import React from 'react'
 import './Enquiry.scss'
-
+import emailjs from 'emailjs-com'
 
 const Enquiry = () => {
+
+  function sendMail(e){
+    e.preventDefault();
+    console.log(e.target)
+    emailjs.sendForm('service_jkr5r3g', 'template_xqimv7q', e.target, 'Kk4iOfHC6kz-zQpYd')
+      .then((result) => {
+        const form = e.target;
+        form.className = "onSubmit"
+        console.log(form.className)
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset()
+  }
+  
+  
   return (
-    <div className='enquiry__form'>
+    <>
+    <div className="afterSubmit">
+
+    </div>
+    <form onSubmit={sendMail} className='enquiry__form'>
         <div>
         <label htmlFor="service">Class/Service</label>
         <br />
         <select name="service" id="service-select">
-            <option value="">The Salsa Dance</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
+            <option value="Salsa Dance">The Salsa Dance</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Zumba">Zumba</option>
        </select>
 
         </div>
 
         <div>
-        <label htmlFor="service">Your Name</label>
+        <label htmlFor="name">Your Name</label>
         <br />
-        <input type="text" id='service' placeholder='Full Name' />
+        <input type="text" id='name' placeholder='Full Name' name='from_name'  required/>
         </div>
 
         <div>
-        <label htmlFor="service">Email Address</label>
+        <label htmlFor="email-id">Email Address</label>
         <br />
-        <input type="text" id='service' placeholder='Your Email-ID' />
+        <input type="email" id='email-id' name='user_email' placeholder='Your Email-ID'  required/>
         </div>
 
         <div>
-          <button className='button'>Enquire Now</button>
+          <input type="submit" className='button' placeholder="Enquire Now" required/>
         </div>
 
-    </div>
+    </form>
+    </>
   )
 }
 
