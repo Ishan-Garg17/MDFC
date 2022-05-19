@@ -6,12 +6,12 @@ const Enquiry = () => {
 
   function sendMail(e){
     e.preventDefault();
-    console.log(e.target)
+    const afterSubmit = document.getElementById('afterSubmit') 
+    
     emailjs.sendForm('service_jkr5r3g', 'template_xqimv7q', e.target, 'Kk4iOfHC6kz-zQpYd')
-      .then((result) => {
-        const form = e.target;
-        form.className = "onSubmit"
-        console.log(form.className)
+      .then(() => {
+        e.target.style.display = "none";
+        afterSubmit.style.display = "block"
       }, (error) => {
           console.log(error.text);
       });
@@ -21,8 +21,8 @@ const Enquiry = () => {
   
   return (
     <>
-    <div className="afterSubmit">
-
+    <div id="afterSubmit">
+        <h2>Thanks For Submitting, We will get back to you soon.</h2>
     </div>
     <form onSubmit={sendMail} className='enquiry__form'>
         <div>
