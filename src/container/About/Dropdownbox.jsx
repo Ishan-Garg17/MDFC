@@ -18,6 +18,7 @@ const Dropdownbox = ({contentInSection}) => {
     <Dropdown.Item onClick={contentInSection} id="4"> Competition  Training</Dropdown.Item>
     <Dropdown.Item onClick={contentInSection} id="5"> Kids Summer Camp</Dropdown.Item>
     <Dropdown.Item onClick={contentInSection} id="6"> Kids Winter Camp</Dropdown.Item>
+    <Dropdown.Item onClick={contentInSection} id="7"> About Us</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
   )

@@ -34,4 +34,4 @@ const About = () => {
   )
 }
 
-export default AppWrap(About,'Classes','about__special')
+export default AppWrap(About,'AboutUs','about__special')
