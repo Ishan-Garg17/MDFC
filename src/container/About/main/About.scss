@@ -1,5 +1,21 @@
 .about__special{
-    height: 90rem;
+    @media screen and(min-width:2000px) {
+        height: 130vh;
+    } 
+    @media screen and(max-width: 500px) {
+        height: 163vh !important;
+    }
+    
+    @media screen and(max-height: 670px){
+        height: 202vh !important;
+    }  
+    @media screen and(max-height: 816px){
+        height: 140vh;
+    }  
+    @media screen and(max-height: 570px){
+        height: 230vh !important;
+    }
+    height: 120vh;
 
     .app__flex{
         justify-content: flex-start;
@@ -14,11 +30,12 @@
    
     .about__form{
         width: 54rem;
-        height: 10rem;
+        height: 10.5rem;
+        border-radius: 13px;
 
         @media screen and (max-width: 950px) {
             height: 16rem;
-            width: 40rem ;
+            width: 32rem ;
             border-radius: 15px;
             
         }
@@ -29,8 +46,8 @@
         }
         
         @media screen and (max-width: 500px) {
-            height: 21rem;
-            width: 18rem;
+            height: 25rem;
+    width: 17rem;
             border-radius: 15px;
         }
 

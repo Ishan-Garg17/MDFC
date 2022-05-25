@@ -18,11 +18,13 @@ const Footer = () => {
 
    return (
      <>
-     {/* <div className='footer__special'> */}
         <div className='app__footer'>
       <div className=" contact__us">
           <Heading title='Any Question' heading='CONTACT US'/>
-          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam deleniti tenetur repudiandae totam reiciendis sed  illo molestias, iste,Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p >
+          The brand which strongly believes in the motto, Give wings to your dreams, helps you let go of your inhibitions, push your limits and express yourself. 
+          And it is this warmth displayed by the MDFC family which attracts students from all age groups and diverse cultures
+            </p>
       </div>
 
       <div className=" map">

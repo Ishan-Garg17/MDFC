@@ -1,6 +1,6 @@
 import './App.scss';
-
-import {About, Header, OurExpert, Testimonials, Footer} from './container'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {About, Header, OurExpert,Footer} from './container'
 import {Navbar} from './components'
 import { Component } from 'react';
 

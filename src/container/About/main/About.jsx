@@ -11,19 +11,11 @@ const About = () => {
   console.log(window.scrollY)
   return (
     <div className='app__about'>
-        <motion.div 
-          whileInView={{ scale: [0,1], opacity: [0, 1] }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            duration: 1
-          }}
-        className='about__form' >
+       <div className='about__form' >
                   
                   <Enquiry/>
 
-        </motion.div>
+        </div>
 
           <div className='about__section'>
               <Heading heading='MDFC' title='Welcome To'/>         
@@ -34,4 +26,4 @@ const About = () => {
   )
 }
 
-export default AppWrap(About,'AboutUs','about__special')
+export default AppWrap(About,'About Us','about__special')

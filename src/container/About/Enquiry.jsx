@@ -27,13 +27,14 @@ const Enquiry = () => {
     </div>
     <form onSubmit={sendMail} className='enquiry__form'>
         <div>
-        <label htmlFor="service">Class/Service</label>
+        <label htmlFor="service">Age Group</label>
         <br />
         <select name="service" id="service-select">
-            <option value="Salsa Dance">The Salsa Dance</option>
-            <option value="Hip Hop">Hip Hop</option>
-            <option value="Jazz">Jazz</option>
-            <option value="Zumba">Zumba</option>
+            <option value="1.5 years - 2.5 years">1.5-2.5 years</option>
+            <option value="Hip Hop">3-5 years</option>
+            <option value="Jazz">6-10 years</option>
+            <option value="Zumba">10+ years</option>
+            <option value="Zumba">45+ years</option>
        </select>
 
         </div>
@@ -49,9 +50,15 @@ const Enquiry = () => {
         <br />
         <input type="email" id='email-id' name='user_email' placeholder='Your Email-ID'  required/>
         </div>
+        
+        <div>
+        <label htmlFor="phone_no">Contact No.</label>
+        <br />
+        <input type='tel' id='phone_no' name='phone_no' placeholder='Your Contact No.' required/>
+        </div>
 
         <div>
-          <input type="submit" className='button' placeholder="Enquire Now" required/>
+          <input type="submit" className='button' placeholder="Enquire Now"/>
         </div>
 
     </form>

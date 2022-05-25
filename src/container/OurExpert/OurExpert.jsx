@@ -2,7 +2,6 @@ import React from "react";
 import "./OurExpert.scss";
 import Heading from "../../components/Heading";
 import AppWrap from "../../wrapper/AppWrap";
-import images from '../../assets/images'
 import { motion } from "framer-motion";
 import CarouselImage from "./CarouselImage";
 
@@ -11,41 +10,54 @@ const OurExpert = () => {
     <div className="app__experts">
       <Heading title="MEET THE BEST" heading="Our Experts" />
 
-      <motion.div 
-      whileInView={{opacity: [0, 1] }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 2
-      }}
-      className="expert_content">
+      <div className="expert_content">
 
         <div className="main_image">
             <CarouselImage/>
-            
-
-          </div>
+        </div>
         
-          <div className="content">
+        <div className="content">
+            <h1>Himanshu Bundela</h1>
             <p>
-            Dancing for more than 15 years now and teaching for more than 12 years, Himanshu Bundela - the founder of MDFC believes to inspire, guide and help the next generation to enhance their talent and pave their way to success.
+            Dancing for more than 15 years now and teaching for more than 12 years, Founder of MDFC believes to inspire, guide and help the next generation to enhance their talent and pave their way to success.
             Professionally trained from leading dance schools of Delhi such as Central  Contemporary Ballet, Big Dance Centre and Delhi Dance Academy Himanshu   specialises in the following dance forms: Contemporary, Ballet, Jazz,   Gymnastics, Hip Hop, Bollywood, Bhangra, Salsa, B-boying.
             </p>
-          </div>
+        </div>
         
-      </motion.div>
+      </div>
 
-      <motion.div 
-      whileInView={{opacity: [0, 1] }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-        duration: 1.5
-      }}
-      className="expert_points">
+      <div className="expert_points">
 
-        <ul>
+        <motion.div
+        whileInView={{opacity: [0, 1] }}
+        transition={{
+          duration: 1.0
+        }}>
+            <h3>TODDLERS</h3>
+            <h3>EXPERT</h3>
+            <span>The only trainer in Delhi &amp; Gurgaon teaching kids as young as 1.5 years </span>
+        </motion.div>
+        <motion.div 
+        whileInView={{opacity: [0, 1] }}
+        transition={{
+          duration: 1
+        }}
+        >
+            <h3>SPECIAL NEEDS</h3>
+            <h3>EXPERT</h3>
+            <span>The only trainer in Delhi &amp; Gurgaon teaching kids with autism, down syndrome.</span>
+        </motion.div>
+        <motion.div
+        whileInView={{opacity: [0, 1] }}
+        transition={{
+          duration: 1
+        }}
+        >
+            <h3>GYMNASTICS</h3>
+            <h3>EXPERT</h3>
+            <span>A certified gymnastics trainer best suited for competition level trainer.</span>
+        </motion.div>
+        {/* <ul>
           <li>
           An expert &amp; specialized trainer at using creative movements for toddlers as young as
           1.5 years. (The only trainer in Delhi &amp; Gurgaon which teaches specialised dance to toddlers
@@ -63,9 +75,9 @@ const OurExpert = () => {
           A certified &amp; professional gymnastics trainer
 
           </li>
-        </ul>
+        </ul> */}
         
-      </motion.div>
+      </div>
     </div>
   );
 };
