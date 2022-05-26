@@ -1,7 +1,7 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {About, Header, OurExpert,Footer,Gallery} from './container'
-import {Navbar} from './components'
+import {Navbar, SocialMedia} from './components'
 import { Component } from 'react';
 
 class App extends Component{
@@ -16,13 +16,12 @@ class App extends Component{
         <Header/>
         <About/>
         <OurExpert/>
-        
-          <Gallery/>
-       
+        <Gallery/>
         <Footer/> 
         <div className="copyright">
-        <span>Copyright {year}. All rights resrved. </span>
+          <span>Copyright {year}. All rights resrved. </span>
         </div>
+        {/* <SocialMedia specialClass="app__special"/> */}
     </div>
        );
   }

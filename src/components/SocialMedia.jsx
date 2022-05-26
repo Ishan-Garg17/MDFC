@@ -1,13 +1,18 @@
 import React from 'react'
-import {BsInstagram,BsYoutube} from 'react-icons/bs';
+import {BsInstagram,BsYoutube,BsWhatsapp} from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
 
 
-const SocialMedia = () => {
+const SocialMedia = ({specialClass}) => {
    
   return(
-    <div className='app__social'>
+    <div className={specialClass}>
+         <div>
+        <a href="https://api.whatsapp.com/send?phone=+919871497596&text=Hello, I would like to chat">
+            <BsWhatsapp />
+            </a>
+        </div>
         <div>
         <a href="https://www.instagram.com/mdfc_mydanceandfitnesscentre/">
             <BsInstagram />

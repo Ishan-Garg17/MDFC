@@ -63,11 +63,10 @@ const Footer = () => {
         </div>
 
           <div className="social_media"> 
-              <SocialMedia/>
+              <SocialMedia specialClass="app__social"/>
           </div>
       </div>
         </div>
-    {/* </div> */}
     </>
   )
 }
