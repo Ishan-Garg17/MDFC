@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
       <ul id="navbar_links" className="app__navbar-links">
         {
-        ['home', 'About Us', 'Our Experts', 'Gallery', 'contact'].map
+        ['home', 'About Us', 'Our Experts', 'gallery', 'contact'].map
         (
           (item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -69,7 +69,7 @@ const Navbar = () => {
               <HiX onClick={(e) => handleOnClick(e)} />
             </motion.span>
             <ul>
-              { ['home', 'About Us', 'Our Experts', 'Gallery', 'contact'].map((item) => (
+              { ['home', 'About Us', 'Our Experts', 'gallery', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={(item ==='Our Experts')?`#our_expert`:`#${item}`} onClick={() => setToggle(false)}>
                     {item}
