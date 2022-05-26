@@ -1,6 +1,6 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {About, Header, OurExpert,Footer} from './container'
+import {About, Header, OurExpert,Footer,Gallery} from './container'
 import {Navbar} from './components'
 import { Component } from 'react';
 
@@ -16,9 +16,9 @@ class App extends Component{
         <Header/>
         <About/>
         <OurExpert/>
-        {/* 
-          <Testimonials/>
-        */}
+        
+          <Gallery/>
+       
         <Footer/> 
         <div className="copyright">
         <span>Copyright {year}. All rights resrved. </span>
