@@ -30,10 +30,6 @@ const Gallery = () => {
         <div className="image">
           <img src={images.about04} alt="" />
         </div>
-{/* 
-        <div className="image">
-          <img src={images.about04} alt="" />
-        </div> */}
       </div>
     </>
   );
