@@ -78,4 +78,4 @@ const Gallery = () => {
   );
 };
 
-export default AppWrap(Gallery, "gallery");
+export default AppWrap(Gallery, "gallery","gallery_special");
