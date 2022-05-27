@@ -6,6 +6,7 @@ const Enquiry = () => {
 
   function sendMail(e){
     e.preventDefault();
+    console.log(e)
     const afterSubmit = document.getElementById('afterSubmit') 
     
     emailjs.sendForm('service_jkr5r3g', 'template_xqimv7q', e.target, 'Kk4iOfHC6kz-zQpYd')
@@ -54,7 +55,7 @@ const Enquiry = () => {
         <div>
         <label htmlFor="phone_no">Contact No.</label>
         <br />
-        <input type='tel' id='phone_no' name='phone_no' placeholder='Your Contact No.' required/>
+        <input type='text' id='phone_no' name='phone_no' pattern="[789][0-9]{9}" placeholder='Your Contact No.' required/>
         </div>
 
         <div>

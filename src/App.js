@@ -21,7 +21,7 @@ class App extends Component{
         <div className="copyright">
           <span>Copyright {year}. All rights resrved. </span>
         </div>
-        {/* <SocialMedia specialClass="app__special"/> */}
+        <SocialMedia specialClass="app__right"/>
     </div>
        );
   }
