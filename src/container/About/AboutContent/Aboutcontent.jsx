@@ -33,7 +33,7 @@ class Aboutcontent extends React.Component {
     else if(id==='2'){
 
       this.setState({
-        imageURL: images.about01,
+        imageURL: images.about02,
         title: 'Corporate Choreography',
         content: ['Amazon','Key sight','Analec infotech','Wunderman','K & S partners', 
         'Amar Jain Clothing', 'WWF','IIT', 'Russian Embassy', 'Raahgiri',   'American Embassy'],
@@ -47,7 +47,7 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about03,
         title: 'Wedding Choreography',
-        content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.',
+        content: 'Marriages are made in heaven, but they are celebrated on Earth! Wedding dance choreography differs dramatically from other types of dance choreography. Its not about the choreographer teaching you and your troupe what they know; it is all about what you and your group can learn in a short amount of time. So, whether you are a seasoned dancer or a beginner, MDFC will make sure that everyone is on the same page by adjusting to the time and talent levels available to create a unique dance programme.',
         specialClass: ''
       //
       })
@@ -58,8 +58,8 @@ class Aboutcontent extends React.Component {
       this.setState({
         imageURL: images.about04,
         title: 'Training for various competitions',
-        content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages',
-        specialClass: ''
+        content: 'Dance competitions may be a fun and educational experience for kids of all ages. It gives numerous benefits that kids would not gain if they went to a non-competitive dance school. Whether it is your 1st competition or 50th,  MDFC gives the ideal platform for training and upskilling yourself with our qualified and experienced specialists.',
+       specialClass: ''
       })
       
     }

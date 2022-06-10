@@ -1,4 +1,5 @@
 import about01 from '../assets/about01.jpg';
+import about02 from '../assets/about02.jpg';
 import about05 from '../assets/about05.jpg';
 import about06 from '../assets/about06.jpg';
 import about04 from '../assets/about04.jpg';
@@ -14,6 +15,7 @@ import himanshu4_1 from '../assets/himanshu4_1.jpg'
 
 export default {
   about01,
+  about02,
   about03,
   about05,
   about06,
