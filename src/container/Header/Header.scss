@@ -46,7 +46,9 @@
     transform: translateX(150px) translateZ(0px) !important;
     }
     @media screen and (max-width: 790px) {
-        transform: translateX(150px) translateZ(0px) !important;
+        // transform: translateX(150px) translateZ(0px) !important;
+        height: 50%;
+        align-items: flex-start;
         .badge-cmp{
             width: 22rem;
         }
