@@ -10,7 +10,7 @@ class Aboutcontent extends React.Component {
     super();
 
     this.state = {
-      imageURL: images.about01,
+      imageURL: images.gallery05,
       title: 'We have Different Classes for all the Age-Groups.',
       content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)'],
       specialClass: ''
@@ -23,7 +23,7 @@ class Aboutcontent extends React.Component {
     if(id==='1'){
 
       this.setState({
-        imageURL: images.about01,
+        imageURL: images.gallery05,
         title: 'We have Different Classes for all the Age-Groups.',
         content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)'],
         specialClass: ''

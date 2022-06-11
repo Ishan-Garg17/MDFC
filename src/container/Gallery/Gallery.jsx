@@ -12,20 +12,37 @@ const Gallery = () => {
      
       <div className="main_container">
         <div className="image">
-          <img src={images.about04} alt="" />
+          <img src={images.gallery01} alt="" />
         </div>
 
         <div className="image">
-          <img src={images.about03} alt="" />
+          <img src={images.gallery02} alt="" />
         </div>
 
+        <div className="image">
+          <img src={images.gallery03} alt="" />
+        </div>
+
+        <div className="image">
+          <img src={images.gallery04} alt="" />
+        </div>
+        
         <div className="image">
           <img src={images.about01} alt="" />
         </div>
-
+        
         <div className="image">
-          <img src={images.about05} alt="" />
+          <img src={images.gallery06} alt="" />
         </div>
+        
+        <div className="image">
+          <img src={images.gallery07} alt="" />
+        </div>
+{/*         
+        <div className="image">
+          <img src={images.gallery04} alt="" />
+        </div> */}
+
       </div>
 
 
