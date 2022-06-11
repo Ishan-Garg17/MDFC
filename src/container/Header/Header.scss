@@ -1,7 +1,6 @@
 .home_special{
 
     background-image: url('../../assets/trial_6(final).jpg');
-  
     width: 100vw;
     height: 100vh;
     object-fit: contain;
@@ -9,13 +8,6 @@
     background-repeat: no-repeat;
 	background-size: cover; 
 	background-position: 50% 50%;
-    // image-rendering: auto;
-//   image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-    // @media screen and (min-wdth: 550px) {
-    //     background: url('../../assets/trial_6(final).jpg');
-        
-    // } 
 }
 
 .app__header{
