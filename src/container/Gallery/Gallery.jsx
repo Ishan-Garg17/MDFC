@@ -38,10 +38,6 @@ const Gallery = () => {
         <div className="image">
           <img src={images.gallery07} alt="" />
         </div>
-{/*         
-        <div className="image">
-          <img src={images.gallery04} alt="" />
-        </div> */}
 
       </div>
 
@@ -50,7 +46,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={images.about03}
+            src={images.gallery01}
             alt="First slide"
           />
          
@@ -58,7 +54,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={images.about01}
+            src={images.gallery02}
             alt="Second slide"
           />
 
@@ -67,7 +63,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={images.about04}
+            src={images.gallery03}
             alt="Third slide"
           />
         </Carousel.Item>
@@ -75,7 +71,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={images.about05}
+            src={images.gallery04}
             alt="Third slide"
           />
         </Carousel.Item>
@@ -83,7 +79,23 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={images.about04}
+            src={images.about01}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={images.gallery06}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={images.gallery07}
             alt="Third slide"
           />
         </Carousel.Item>
