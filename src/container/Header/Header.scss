@@ -45,11 +45,12 @@
     @media screen and (max-width: 960px) {
     transform: translateX(150px) translateZ(0px) !important;
     }
-    @media screen and (max-width: 790px) {
-        // transform: translateX(150px) translateZ(0px) !important;
-        height: 50%;
+    @media screen and (max-width: 650px) {
+       
+        height: 73%;
         align-items: flex-start;
         .badge-cmp{
+            background-color: rgb(255, 255, 255);
             width: 22rem;
         }
         .info__line{
@@ -58,15 +59,23 @@
                 height: 10px;
                 width: 134px;
             }
+            span{
+                color: rgb(255, 0, 85);
+            }
 
         }
         span{
+            font-weight: 900;
             font-size: 0.8rem !important;
         }   
         h1{
+            color: red;
             font-size: 4rem;
         }
         p{
+            // color: red;
+            color: rgb(255, 0, 85);
+            font-weight: 900;
             font-size: 1rem;
         }
     }
