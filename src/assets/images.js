@@ -7,7 +7,6 @@ import gallery04 from '../assets/gallery04.jpg';
 import gallery05 from '../assets/gallery05.jpg';
 import gallery06 from '../assets/gallery06.jpg';
 import gallery07 from '../assets/gallery07.jpg';
-
 import about04 from '../assets/about04.jpg';
 import about03 from '../assets/about03.jpg';
 import footer_logo from '../assets/footer_logo.png';
@@ -17,8 +16,7 @@ import himanshu3 from '../assets/himanshu3.jpg'
 import himanshu5 from '../assets/himanshu5.jpg'
 
 
-
-export default {
+const images = {
   about01,
   about02,
   about03,
@@ -35,4 +33,5 @@ export default {
   himanshu3,
   himanshu5,
   footer_logo
-};
+}
+export default images;

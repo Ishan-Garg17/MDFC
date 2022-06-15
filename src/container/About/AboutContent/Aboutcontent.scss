@@ -129,7 +129,7 @@
     @media screen and (max-width: 1040px) {
         height: 35rem;
         width: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
     }    
     
 }
@@ -224,9 +224,8 @@ section{
 }
 
 .about_mdfc{
-    // .section__image{
-    //     display: none;
-    // }
+    padding: 7px;
+    overflow-y: scroll;
     .section__content{
         height: 100%;
         width: 100%;
@@ -236,3 +235,16 @@ section{
         }
     }
 }
+
+div ::-webkit-scrollbar{
+    
+    width: 3px;
+}
+div ::-webkit-scrollbar-track{
+    background: rgb(219, 219, 219);
+ }
+ div ::-webkit-scrollbar-thumb{
+     background: #ff0055;
+     border-radius: 13px;
+ }
+ 
