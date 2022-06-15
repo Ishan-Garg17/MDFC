@@ -14,7 +14,7 @@ import footer_logo from '../assets/footer_logo.png';
 import himanshu from '../assets/himanshu.jpg'
 import himanshu2 from '../assets/himanshu2.jpg'
 import himanshu3 from '../assets/himanshu3.jpg'
-import himanshu4_1 from '../assets/himanshu4_1.jpg'
+import himanshu5 from '../assets/himanshu5.jpg'
 
 
 
@@ -33,6 +33,6 @@ export default {
   himanshu,
   himanshu2,
   himanshu3,
-  himanshu4_1,
+  himanshu5,
   footer_logo
 };

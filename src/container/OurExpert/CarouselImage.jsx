@@ -34,7 +34,7 @@ const CarouselImage = () => {
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src={images.himanshu4_1}
+      src={images.himanshu5}
       alt="Third slide"
     />
   </Carousel.Item>

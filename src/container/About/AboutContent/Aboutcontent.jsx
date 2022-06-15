@@ -10,6 +10,7 @@ class Aboutcontent extends React.Component {
     super();
 
     this.state = {
+      preloaded: [images.about01,images.about02,images.about03,images.about04],
       imageURL: images.gallery05,
       title: 'We have Different Classes for all the Age-Groups.',
       content: ['Creative Movements Junior (1.5 years - 2.5 years)','Creative Movements Senior (3 years - 5 years)','Kids Dance a Gymnastics (6 years - 10 years)','Teens a Adults Dance a Gymnastics ( 10+ years and above)','Senior Citizens Dance a Fitness (45+ years and above)'],
@@ -64,26 +65,6 @@ class Aboutcontent extends React.Component {
       
     }
 
-    // else if(id==='5'){
-
-    //   this.setState({
-    //     imageURL: images.about05,
-    //     title: 'Special Classes for Kids during Summers',
-    //     content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor',
-    //     specialClass: ''
-    //   })
-    // }
-
-    // else if(id==='6'){
-
-    //   this.setState({
-    //     imageURL: images.about06,
-    //     title: 'Special Classes for Kids during Winters',
-    //     content: 'lorem ipsum donor lorem ipsum donor lorem ipsum donor',
-    //     specialClass: ''
-    //   })
-
-    // }
     
     else if(id==='5'){
 
@@ -95,11 +76,9 @@ class Aboutcontent extends React.Component {
       })
 
     }
-
-
-
   }
-  // 
+
+
   render() {
     return (
       <motion.div
@@ -173,7 +152,6 @@ class Aboutcontent extends React.Component {
 
                   </div>
                   <br />
-                  {/* <button id='7' onClick={this.contentInSection} className='about__button'>About Us</button> */}
               </div>
 
               <Dropdownbox contentInSection={this.contentInSection}/>

@@ -3,28 +3,37 @@ import './Enquiry.scss'
 import emailjs from 'emailjs-com'
 
 const Enquiry = () => {
+  
 
   function sendMail(e){
     e.preventDefault();
-    console.log(e)
-    const afterSubmit = document.getElementById('afterSubmit') 
+    const afterSubmit = document.getElementById('afterSubmit')   
+    const loading = document.getElementById('loading') 
+    e.target.style.display = "none";
+    loading.style.display = "block";
     
     emailjs.sendForm('service_jkr5r3g', 'template_xqimv7q', e.target, 'Kk4iOfHC6kz-zQpYd')
       .then(() => {
         e.target.reset()
-        e.target.style.display = "none";
+        loading.style.display = "none"
         afterSubmit.style.display = "block"
       }, (error) => {
           console.log(error.text);
-      });
+          e.target.style.display = "block";
+          e.target.reset()
+      })
     
   }
   
   
   return (
     <>
-    <div id="afterSubmit">
+    <div id="afterSubmit" className='message_div'>
         <h2>Thanks For Submitting, We will get back to you soon.</h2>
+    </div>
+    
+    <div id="loading" className='message_div'>
+        <h2>Please Wait...</h2>
     </div>
     <form onSubmit={sendMail} className='enquiry__form'>
         <div>
@@ -55,7 +64,7 @@ const Enquiry = () => {
         <div>
         <label htmlFor="phone_no">Contact No.</label>
         <br />
-        <input type='text' id='phone_no' name='phone_no' pattern="[789][0-9]{9}" placeholder='Your Contact No.' required/>
+        <input type='text' id='phone_no' name='phone_no' pattern="[789][0-9]{9}" placeholder='Your 10 Digit M.No' required/>
         </div>
 
         <div>
