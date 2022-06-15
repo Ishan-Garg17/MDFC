@@ -50,7 +50,7 @@
         height: 73%;
         align-items: flex-start;
         .badge-cmp{
-            background-color: rgb(255, 255, 255);
+            // background-color: rgb(255, 255, 255);
             width: 22rem;
         }
         .info__line{
@@ -60,7 +60,8 @@
                 width: 134px;
             }
             span{
-                color: rgb(255, 0, 85);
+                // color: rgb(255, 0, 85);
+                color: rgb(0, 0, 0);
             }
 
         }
@@ -69,12 +70,13 @@
             font-size: 0.8rem !important;
         }   
         h1{
-            color: red;
+            // color: red;
+            color: white;
             font-size: 4rem;
         }
         p{
-            // color: red;
-            color: rgb(255, 0, 85);
+            color: rgb(0, 0, 0);
+            // color: rgb(255, 0, 85);
             font-weight: 900;
             font-size: 1rem;
         }
