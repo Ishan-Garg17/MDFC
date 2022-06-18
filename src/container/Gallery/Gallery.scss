@@ -35,6 +35,10 @@
     height: 25rem;
     width: 25rem;
     transition: 1s;
+    // border: 1px solid rgb(255, 18, 97);
+    border-radius: 13px;
+    // background-color: rgb(255, 18, 97);
+    margin-bottom: 10px;
     cursor: pointer;
     @media screen and(max-width:955px) {
         height: 20rem;

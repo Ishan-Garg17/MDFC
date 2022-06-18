@@ -41,10 +41,10 @@ const Enquiry = () => {
         <br />
         <select name="service" id="service-select">
             <option value="1.5 years - 2.5 years">1.5-2.5 years</option>
-            <option value="Hip Hop">3-5 years</option>
-            <option value="Jazz">6-10 years</option>
-            <option value="Zumba">10+ years</option>
-            <option value="Zumba">45+ years</option>
+            <option value="3-5 years">3-5 years</option>
+            <option value="6-10 years">6-10 years</option>
+            <option value="10+ years">10+ years</option>
+            <option value="45+ years">45+ years</option>
        </select>
 
         </div>
