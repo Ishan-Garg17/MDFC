@@ -108,10 +108,10 @@ class Aboutcontent extends React.Component {
                       
                       <button id='2'  onClick={this.contentInSection}>
                         <div id='2'>
-                          <h3>
+                          <h3 id='2'>
                             Corporate
                           </h3>
-                          <span>
+                          <span id='2'>
                               Choreography
                           </span>
                         </div>
