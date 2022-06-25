@@ -1,81 +1,69 @@
-.about__special{
-    @media screen and(min-width:2000px) {
+.about__special {
+    @media screen and(min-width: 2000px) {
         height: 130vh;
-    } 
+    }
     @media screen and(max-width: 500px) {
         height: 163vh !important;
     }
-    
-    @media screen and(max-height: 670px){
+    @media screen and(max-height: 670px) {
         height: 202vh !important;
-    }  
-    @media screen and(max-height: 816px){
+    }
+    @media screen and(max-height: 816px) {
         height: 140vh;
-    }  
-    @media screen and(max-height: 570px){
+    }
+    @media screen and(max-height: 570px) {
         height: 230vh !important;
     }
     height: 120vh;
-
-    .app__flex{
+    .app__flex {
         justify-content: flex-start;
     }
 }
 
-.app__about{
+.app__about {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-   
-    .about__form{
-        width: 54rem;
-        height: 10.5rem;
+    .about__form {
+        width: 65rem;
+        height: 11.5rem;
         border-radius: 13px;
-
-        @media screen and (max-width: 950px) {
-            height: 16rem;
-            width: 32rem ;
+        @media screen and (max-width: 1134px) {
+            height: 18rem;
+            width: 33rem;
             border-radius: 15px;
-            
         }
         @media screen and (max-width: 670px) {
             height: 16rem;
             width: 30rem;
             border-radius: 15px;
         }
-        
         @media screen and (max-width: 500px) {
-            height: 25rem;
-    width: 17rem;
+            height: 31rem;
+            width: 17rem;
             border-radius: 15px;
         }
-
-
         display: flex;
         justify-content: center;
         align-items: center;
-        -webkit-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.75);
-        box-shadow: 0px -3px 40px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px -3px 40px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -3px 40px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -3px 40px -5px rgba(0, 0, 0, 0.75);
         background-color: white;
         margin-top: -20px;
     }
 }
 
-
-.about__section{
+.about__section {
     width: 100%;
     margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-evenly;
-
-   
 }
 
-
-.app__wrapper{
+.app__wrapper {
     padding-top: 0;
 }

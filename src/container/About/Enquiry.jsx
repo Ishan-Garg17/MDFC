@@ -66,8 +66,14 @@ const Enquiry = () => {
         <br />
         <input type='text' id='phone_no' name='phone_no' pattern="[789][0-9]{9}" placeholder='Your 10 Digit M.No' required/>
         </div>
-
+        
         <div>
+        <label htmlFor="location">Location</label>
+        <br />
+        <input type='text' id='location' name='location' placeholder='Ex: Gurugram' required/>
+        </div>
+
+        <div className='button_div'>
           <input type="submit" className='button' placeholder="Enquire Now"/>
         </div>
 
